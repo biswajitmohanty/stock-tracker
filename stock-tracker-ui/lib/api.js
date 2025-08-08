@@ -15,4 +15,8 @@ export const moveToHypothetical = async (payload) => {
   const { data } = await api.post("/portfolios/move-to-hypothetical", payload);
   return data;
 };
+export const fetchRegions = async () => {
+  const { data } = await api.get(`/markets/regions`);
+  return data; // [{id:"us", name:"United States"}, ...]
+};
 export default api;

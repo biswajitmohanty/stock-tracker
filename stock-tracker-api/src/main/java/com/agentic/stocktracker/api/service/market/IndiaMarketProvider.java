@@ -10,6 +10,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.time.OffsetDateTime;
 import java.util.Map;
 
+@org.springframework.core.annotation.Order(0)
 @Service
 public class IndiaMarketProvider implements MarketDataProvider {
 
