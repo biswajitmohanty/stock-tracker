@@ -26,3 +26,10 @@ app:
   markets:
     iex-token: "demo"
     alpha-vantage-key: "demo"
+    finnhub-api-key: d2b6gkhr01qrj4ikk4k0d2b6gkhr01qrj4ikk4kg
+    twelvedata-api-key: 4df5a0b518374ee19bd96127fda3f949
+
+logging:
+  level:
+    reactor.netty.http.client: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
