@@ -18,7 +18,11 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    show-sql: true
+    show-sql: false
+  cache:
+    type: caffeine
+    caffeine:
+      spec: maximumSize=500,expireAfterWrite=300s
 
 app:
   cors:
@@ -31,5 +35,5 @@ app:
 
 logging:
   level:
-    reactor.netty.http.client: DEBUG
-    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+    reactor.netty.http.client: WARN
+    org.springframework.web.reactive.function.client.ExchangeFunctions: WARN
