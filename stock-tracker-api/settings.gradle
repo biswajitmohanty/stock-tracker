@@ -1,1 +1,9 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://repo.spring.io/release' }
+        maven { url 'https://repo.maven.apache.org/maven2' }
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = 'stock-tracker-api'
